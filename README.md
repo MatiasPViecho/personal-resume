@@ -2,11 +2,13 @@
 
 Hi! I'm Matias, a fullstack developer from Argentina.
 Yes, you might see this README.md and think to yourself, "wait a minute, there ain't no documentation here", and while it may be bad practice, of course there isn't, this is a personal project to showcase my portfolio and resume to the WWW ("World Wide Web", not to be confused with a new Wild West "Wildest Wild West" perhaps), and it doesn't have really something worthy of detailing (API stuff, endpoints, etc.)
+
 ![Stare Down scene from The Good, The Bad and the ugly](https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExZmk5MWp4dzR6M3premhtdTJ6cDlqeXoxNGh0dDc2YXM3ZjFlNGRtOSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/vaG6cg6OhyY7u/giphy.webp)
 
 ## Even More
 
 I've been working and studying the world of web development since late 2019, started working as a Product Manager / Product Owner / Project Manager (roles weren't that clear really). Aldo since i was a child i already loved playing around with the internals of how programming worked (withouth really knowing what i was doing, and C++ drove me away a little bit)
+
 ![Cowboy Bebop gif - Ein running from Ed, best show](https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExOWE2ZHc0bzN3N3dqNnRqMnl3djN2bDR2YXVqNXd4MG03dGtjc3czYSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/USNlL9p2fxY6Q/giphy.webp)
 
 ## Where did i study and work?
@@ -32,4 +34,4 @@ I've done programming stuff with the following:
 - React Three Fiber (learning)
 
 I hope you enjoy the project and all the explanation of this text, see you around!
-!(Spike Cowboy Bebop bang!)[https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExajYzc2pzeHpxN2doOW1rN2puODB6cG50a3g0NGJpa3I1OGRlYTZzZSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/b21HcSrrBu8pi/giphy.webp]
+![Spike Cowboy Bebop bang!](https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExajYzc2pzeHpxN2doOW1rN2puODB6cG50a3g0NGJpa3I1OGRlYTZzZSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/b21HcSrrBu8pi/giphy.webp)
