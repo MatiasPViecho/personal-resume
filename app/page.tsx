@@ -1,7 +1,9 @@
-import Image from "next/image";
+import MainCard from "./ui/main-card";
 
 export default function Home() {
   return (
-    <main></main>
+    <main>
+      <MainCard />
+    </main>
   );
 }

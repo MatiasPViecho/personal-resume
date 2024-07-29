@@ -13,6 +13,10 @@ const config: Config = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
+      fontFamily: {
+        xanh_mono: ["var(--font-xanh_mono)"],
+        work_sans: ["var(--font-work_sans)"],
+      },
     },
   },
   plugins: [],
