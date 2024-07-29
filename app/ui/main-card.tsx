@@ -60,82 +60,82 @@ export default function MainCard() {
   return (
     <div
       ref={container}
-      className="overflow-hidden flex flex-col w-[250px] h-[350px] gap-3 p-2  border-slate border-4 rounded-2xl bg-cloud/70 backdrop-blur-[2px]"
+      className="overflow-hidden flex flex-col w-[250px] h-[350px] md:h-[700px] md:w-[500px] gap-3 p-2 md:p-8  border-slate border-4 rounded-2xl bg-cloud/70 backdrop-blur-sm"
     >
       <Image
         alt="portrait"
         src={"/mock-photo.png"}
-        className="w-[150px] h-[150px] rounded-full mx-auto"
-        width={150}
-        height={150}
+        className="w-[150px] h-[150px] md:w-[400px] md:h-[400px] rounded-full mx-auto"
+        width={400}
+        height={400}
       />
       <div className="gap-2 flex flex-col w-full">
         <span className="font-xanh_mono text-iris text-[40px] tracking-tight text-animated">
           I&apos;m Matias
         </span>
-        <div className="flex flex-col gap-0 font-semibold font-work_sans text-sm text-animated">
+        <div className="flex flex-col gap-0 font-semibold font-work_sans text-sm text-animated md:text-base">
           <span>Fullstack web developer</span>
           <span> +1 year of experience + studies</span>
         </div>
       </div>
-      <div className="flex gap-2 max-h-10">
+      <div className="flex gap-2 max-h-10 md:pt-8">
         <a
           href="https://www.linkedin.com/in/matias-francisco-perez-viecho/"
           rel="noreferrer noopener nofollow"
           target="_blank"
-          className="relative before:opacity-0 hover:before:opacity-100 hover:before:translate-y-0 before:translate-y-8 before:transition-transform before:content-[attr(before)] before:p-1 before:z-20 before:select-none before:absolute before:bottom-8 before:pointer-events-none before:font-work_sans before:-right-28 before:text-sm before:bg-cloud before:border before:border-onyx before:rounded-lg before:w-max"
+          className="relative before:opacity-0 hover:before:opacity-100 hover:before:translate-y-0 md:hover:before:translate-y-4 before:translate-y-8 before:transition-transform before:content-[attr(before)] before:p-1 before:z-20 before:select-none before:absolute before:bottom-8 before:pointer-events-none before:font-work_sans before:-right-28 before:text-sm before:bg-cloud before:border before:border-onyx before:rounded-lg before:w-max"
           before="Check my LinkedIn!"
         >
           <Image
-            className="link-icon"
+            className="link-icon h-10 w-10 md:h-16 md:w-16"
             alt="linkedin icon"
-            width={40}
-            height={40}
-            src="/icons/icon-linkedin.png"
+            width={64}
+            height={64}
+            src="/icons/icon-linkedin.svg"
           />
         </a>
         <a
           href="https://github.com/MatiasPViecho"
           rel="noreferrer noopener nofollow"
           target="_blank"
-          className="relative before:opacity-0 hover:before:opacity-100 hover:before:translate-y-0 before:translate-y-8 before:transition-transform before:content-[attr(before)] before:p-1 before:z-20 before:select-none before:absolute before:bottom-8 before:pointer-events-none before:font-work_sans before:-right-24 before:text-sm before:bg-cloud before:border before:border-onyx before:rounded-lg before:w-max"
+          className="relative before:opacity-0 hover:before:opacity-100 hover:before:translate-y-0 md:hover:before:translate-y-4 before:translate-y-8 before:transition-transform before:content-[attr(before)] before:p-1 before:z-20 before:select-none before:absolute before:bottom-8 before:pointer-events-none before:font-work_sans before:-right-24 before:text-sm before:bg-cloud before:border before:border-onyx before:rounded-lg before:w-max"
           before="Check my github!"
         >
           <Image
-            className="link-icon"
+            className="link-icon h-10 w-10 md:h-16 md:w-16"
             alt="github icon"
-            width={40}
-            height={40}
-            src="/icons/icon-github.png"
+            width={64}
+            height={64}
+            src="/icons/icon-github.svg"
           />
         </a>
         <a
           href="mailto:matiasviecho.work@gmail.com"
           rel="noreferrer noopener nofollow"
-          className="relative before:opacity-0 hover:before:opacity-100 hover:before:translate-y-0 before:translate-y-8 before:transition-transform before:content-[attr(before)] before:p-1 before:z-20 before:select-none before:absolute before:bottom-8 before:pointer-events-none before:font-work_sans before:-right-16 before:text-sm before:bg-cloud before:border before:border-onyx before:rounded-lg before:w-max"
+          className="relative before:opacity-0 hover:before:opacity-100 hover:before:translate-y-0 md:hover:before:translate-y-4 before:translate-y-8 before:transition-transform before:content-[attr(before)] before:p-1 before:z-20 before:select-none before:absolute before:bottom-8 before:pointer-events-none before:font-work_sans before:-right-16 before:text-sm before:bg-cloud before:border before:border-onyx before:rounded-lg before:w-max"
           before="Send me an email!"
         >
           <Image
-            className="link-icon"
+            className="link-icon h-10 w-12 md:h-16 md:w-20"
             alt="email icon"
-            width={60}
-            height={40}
-            src="/icons/icon-mail.png"
+            width={80}
+            height={64}
+            src="/icons/icon-mail.svg"
           />
         </a>
         <a
           href="/resume.pdf"
           rel="noreferrer noopener nofollow"
           download
-          className="relative before:opacity-0 hover:before:opacity-100 hover:before:translate-y-0 before:translate-y-8 before:transition-transform before:content-[attr(before)] before:p-1 before:z-20 before:select-none before:absolute before:bottom-8 before:pointer-events-none before:font-work_sans before:-right-8 before:text-sm before:bg-cloud before:border before:border-onyx before:rounded-lg before:w-max"
+          className="relative before:opacity-0 hover:before:opacity-100 hover:before:translate-y-0 md:hover:before:translate-y-4 before:translate-y-8 before:transition-transform before:content-[attr(before)] before:p-1 before:z-20 before:select-none before:absolute before:bottom-8 before:pointer-events-none before:font-work_sans before:-right-8 before:text-sm before:bg-cloud before:border before:border-onyx before:rounded-lg before:w-max"
           before="Download my CV!"
         >
           <Image
-            className="link-icon"
+            className="link-icon h-10 w-8 md:h-16 md:w-12"
             alt="resume icon"
-            width={30}
-            height={40}
-            src="/icons/icon-file.png"
+            width={48}
+            height={64}
+            src="/icons/icon-file.svg"
           />
         </a>
       </div>
