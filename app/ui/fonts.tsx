@@ -7,6 +7,6 @@ export const xanhMono = Xanh_Mono({
 });
 export const workSans = Work_Sans({
   subsets: ["latin"],
-  weight: ["400", "700"],
+  weight: ["400", "600", "700"],
   variable: "--font-work_sans",
 });
