@@ -65,7 +65,7 @@ export default function MainCard() {
       <Image
         alt="portrait"
         src={"/mock-photo.png"}
-        className="w-[150px] h-[150px] md:w-[400px] md:h-[400px] rounded-full mx-auto"
+        className="border-2 border-onyx shadow-lg w-[150px] h-[150px] md:w-[400px] md:h-[400px] rounded-full mx-auto"
         width={400}
         height={400}
       />
