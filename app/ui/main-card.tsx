@@ -79,34 +79,65 @@ export default function MainCard() {
         </div>
       </div>
       <div className="flex gap-2 max-h-10">
-        <Image
-          className="link-icon"
-          alt="linkedin icon"
-          width={40}
-          height={40}
-          src="/icons/icon-linkedin.png"
-        />
-        <Image
-          className="link-icon"
-          alt="github icon"
-          width={40}
-          height={40}
-          src="/icons/icon-github.png"
-        />
-        <Image
-          className="link-icon"
-          alt="email icon"
-          width={60}
-          height={40}
-          src="/icons/icon-mail.png"
-        />
-        <Image
-          className="link-icon"
-          alt="resume icon"
-          width={30}
-          height={40}
-          src="/icons/icon-file.png"
-        />
+        <a
+          href="https://www.linkedin.com/in/matias-francisco-perez-viecho/"
+          rel="noreferrer noopener nofollow"
+          target="_blank"
+          className="relative before:opacity-0 hover:before:opacity-100 hover:before:translate-y-0 before:translate-y-8 before:transition-transform before:content-[attr(before)] before:p-1 before:z-20 before:select-none before:absolute before:bottom-8 before:pointer-events-none before:font-work_sans before:-right-28 before:text-sm before:bg-cloud before:border before:border-onyx before:rounded-lg before:w-max"
+          before="Check my LinkedIn!"
+        >
+          <Image
+            className="link-icon"
+            alt="linkedin icon"
+            width={40}
+            height={40}
+            src="/icons/icon-linkedin.png"
+          />
+        </a>
+        <a
+          href="https://github.com/MatiasPViecho"
+          rel="noreferrer noopener nofollow"
+          target="_blank"
+          className="relative before:opacity-0 hover:before:opacity-100 hover:before:translate-y-0 before:translate-y-8 before:transition-transform before:content-[attr(before)] before:p-1 before:z-20 before:select-none before:absolute before:bottom-8 before:pointer-events-none before:font-work_sans before:-right-24 before:text-sm before:bg-cloud before:border before:border-onyx before:rounded-lg before:w-max"
+          before="Check my github!"
+        >
+          <Image
+            className="link-icon"
+            alt="github icon"
+            width={40}
+            height={40}
+            src="/icons/icon-github.png"
+          />
+        </a>
+        <a
+          href="mailto:matiasviecho.work@gmail.com"
+          rel="noreferrer noopener nofollow"
+          className="relative before:opacity-0 hover:before:opacity-100 hover:before:translate-y-0 before:translate-y-8 before:transition-transform before:content-[attr(before)] before:p-1 before:z-20 before:select-none before:absolute before:bottom-8 before:pointer-events-none before:font-work_sans before:-right-16 before:text-sm before:bg-cloud before:border before:border-onyx before:rounded-lg before:w-max"
+          before="Send me an email!"
+        >
+          <Image
+            className="link-icon"
+            alt="email icon"
+            width={60}
+            height={40}
+            src="/icons/icon-mail.png"
+          />
+        </a>
+        <a
+          href="/resume.pdf"
+          rel="noreferrer noopener nofollow"
+          download
+          className="relative before:opacity-0 hover:before:opacity-100 hover:before:translate-y-0 before:translate-y-8 before:transition-transform before:content-[attr(before)] before:p-1 before:z-20 before:select-none before:absolute before:bottom-8 before:pointer-events-none before:font-work_sans before:-right-8 before:text-sm before:bg-cloud before:border before:border-onyx before:rounded-lg before:w-max"
+          before="Download my CV!"
+        >
+          <Image
+            className="link-icon"
+            alt="resume icon"
+            width={30}
+            height={40}
+            src="/icons/icon-file.png"
+          />
+        </a>
       </div>
     </div>
   );
