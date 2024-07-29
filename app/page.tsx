@@ -1,4 +1,5 @@
 import MainCard from "./ui/main-card";
+import PresentationText from "./ui/presentation-text";
 
 export default function Home() {
   return (
@@ -27,9 +28,10 @@ export default function Home() {
       >
         MATIAS F. PEREZ VIECHO
       </span>
-      <div className="w-max mx-auto pt-32">
+      <div className="w-max mx-auto py-32">
         <MainCard />
       </div>
+      <PresentationText />
     </main>
   );
 }
