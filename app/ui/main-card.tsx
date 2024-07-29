@@ -83,8 +83,8 @@ export default function MainCard() {
           href="https://www.linkedin.com/in/matias-francisco-perez-viecho/"
           rel="noreferrer noopener nofollow"
           target="_blank"
-          className="relative before:opacity-0 hover:before:opacity-100 hover:before:translate-y-0 md:hover:before:translate-y-4 before:translate-y-8 before:transition-transform before:content-[attr(before)] before:p-1 before:z-20 before:select-none before:absolute before:bottom-8 before:pointer-events-none before:font-work_sans before:-right-28 before:text-sm before:bg-cloud before:border before:border-onyx before:rounded-lg before:w-max"
-          before="Check my LinkedIn!"
+          className="relative before:opacity-0 hover:before:opacity-100 hover:before:translate-y-0 md:hover:before:translate-y-4 before:translate-y-8 before:transition-transform before:content-[attr(data-before)] before:p-1 before:z-20 before:select-none before:absolute before:bottom-8 before:pointer-events-none before:font-work_sans before:-right-28 before:text-sm before:bg-cloud before:border before:border-onyx before:rounded-lg before:w-max"
+          data-before="Check my LinkedIn!"
         >
           <Image
             className="link-icon h-10 w-10 md:h-16 md:w-16"
@@ -98,8 +98,8 @@ export default function MainCard() {
           href="https://github.com/MatiasPViecho"
           rel="noreferrer noopener nofollow"
           target="_blank"
-          className="relative before:opacity-0 hover:before:opacity-100 hover:before:translate-y-0 md:hover:before:translate-y-4 before:translate-y-8 before:transition-transform before:content-[attr(before)] before:p-1 before:z-20 before:select-none before:absolute before:bottom-8 before:pointer-events-none before:font-work_sans before:-right-24 before:text-sm before:bg-cloud before:border before:border-onyx before:rounded-lg before:w-max"
-          before="Check my github!"
+          className="relative before:opacity-0 hover:before:opacity-100 hover:before:translate-y-0 md:hover:before:translate-y-4 before:translate-y-8 before:transition-transform before:content-[attr(data-before)] before:p-1 before:z-20 before:select-none before:absolute before:bottom-8 before:pointer-events-none before:font-work_sans before:-right-24 before:text-sm before:bg-cloud before:border before:border-onyx before:rounded-lg before:w-max"
+          data-before="Check my github!"
         >
           <Image
             className="link-icon h-10 w-10 md:h-16 md:w-16"
@@ -112,8 +112,8 @@ export default function MainCard() {
         <a
           href="mailto:matiasviecho.work@gmail.com"
           rel="noreferrer noopener nofollow"
-          className="relative before:opacity-0 hover:before:opacity-100 hover:before:translate-y-0 md:hover:before:translate-y-4 before:translate-y-8 before:transition-transform before:content-[attr(before)] before:p-1 before:z-20 before:select-none before:absolute before:bottom-8 before:pointer-events-none before:font-work_sans before:-right-16 before:text-sm before:bg-cloud before:border before:border-onyx before:rounded-lg before:w-max"
-          before="Send me an email!"
+          className="relative before:opacity-0 hover:before:opacity-100 hover:before:translate-y-0 md:hover:before:translate-y-4 before:translate-y-8 before:transition-transform before:content-[attr(data-before)] before:p-1 before:z-20 before:select-none before:absolute before:bottom-8 before:pointer-events-none before:font-work_sans before:-right-16 before:text-sm before:bg-cloud before:border before:border-onyx before:rounded-lg before:w-max"
+          data-before="Send me an email!"
         >
           <Image
             className="link-icon h-10 w-12 md:h-16 md:w-20"
@@ -127,8 +127,8 @@ export default function MainCard() {
           href="/resume.pdf"
           rel="noreferrer noopener nofollow"
           download
-          className="relative before:opacity-0 hover:before:opacity-100 hover:before:translate-y-0 md:hover:before:translate-y-4 before:translate-y-8 before:transition-transform before:content-[attr(before)] before:p-1 before:z-20 before:select-none before:absolute before:bottom-8 before:pointer-events-none before:font-work_sans before:-right-8 before:text-sm before:bg-cloud before:border before:border-onyx before:rounded-lg before:w-max"
-          before="Download my CV!"
+          className="relative before:opacity-0 hover:before:opacity-100 hover:before:translate-y-0 md:hover:before:translate-y-4 before:translate-y-8 before:transition-transform before:content-[attr(data-before)] before:p-1 before:z-20 before:select-none before:absolute before:bottom-8 before:pointer-events-none before:font-work_sans before:-right-8 before:text-sm before:bg-cloud before:border before:border-onyx before:rounded-lg before:w-max"
+          data-before="Download my CV!"
         >
           <Image
             className="link-icon h-10 w-8 md:h-16 md:w-12"
