@@ -12,15 +12,14 @@ export default function BackgroundMarquee() {
         start: "-50% top",
         end: "600% top",
         scrub: true,
-        markers: true,
       },
     });
     tl.from(".marquee-text", {
       xPercent: -10,
-      stagger: 0.1,
+      stagger: 0.02,
     }).to(".marquee-text", {
       xPercent: -40,
-      stagger: 0.1,
+      stagger: 0.02,
     });
   });
   return (
