@@ -1,20 +1,29 @@
 import Table from "@/app/ui/table";
 import Carousel from "@/app/ui/carousel/carousel";
+import { ProjectI, TableI } from "@/app/interfaces";
 
-const work_table = {
+const work_table: TableI = {
   headers: ["Place", "Role", "Year"],
   rows: [
     ["Tuxdi", "Full-stack developer", "Jan 2023 - Mar 2024"],
     ["Begit", "Product Manager", "Mar 2021 - Mar 2022"],
   ],
 };
-const studies_table = {
+const studies_table: TableI = {
   headers: ["Country", "Carreer", "Year"],
   rows: [
     ["Argentina", "Computer Science", "Jan 2022 - Jan 2024"],
     ["Argentina", "Systems Engineering", "Jan 2024 - Current"],
   ],
 };
+const personal_projects: ProjectI[] = [
+  {
+    href: "https://1000lumens.vercel.app/",
+    alt: "Screenshot of 1000lumens project",
+    imagePath: "/mock-card.jpg",
+    name: "1000 Lumens",
+  },
+];
 export default function ProjectsSection() {
   return (
     <div className="mt-12 flex flex-col px-2 sm:px-0 gap-4 sm:gap-8 md:gap-16">
@@ -29,7 +38,12 @@ export default function ProjectsSection() {
             </h2>
             <Table headers={work_table.headers} rows={work_table.rows} />
           </div>
-          <Carousel />
+          <div className="flex flex-col gap-1">
+            <h2 className="font-work_sans text-lg font-medium uppercase">
+              Personal Projects
+            </h2>
+            <Carousel items={personal_projects} />
+          </div>
         </div>
         <div className="md:flex md:justify-between">
           <div className="z-40 bg-gradient-to-r pointer-events-none from-cloud bg-opacity-90 sm:p-4 md:p-8">
