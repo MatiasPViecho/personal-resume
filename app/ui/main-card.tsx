@@ -71,10 +71,10 @@ export default function MainCard() {
       </Link>
       <Image
         alt="portrait"
-        src={"/mock-photo.png"}
+        src={"/IMG_3478-4.jpg"}
         className="border-2 border-onyx shadow-lg w-[150px] h-[150px] md:w-[400px] md:h-[400px] rounded-full mx-auto"
-        width={400}
-        height={400}
+        width={1000}
+        height={1500}
       />
       <div className="gap-2 flex flex-col w-full">
         <span className="font-xanh_mono text-iris text-[40px] tracking-tight text-animated">
