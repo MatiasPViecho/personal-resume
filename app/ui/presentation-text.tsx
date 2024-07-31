@@ -13,7 +13,6 @@ export default function PresentationText() {
         start: "top 99%",
         end: "280% bottom",
         scrub: false,
-        markers: true,
         toggleActions: "play reverse play play",
       },
     });
