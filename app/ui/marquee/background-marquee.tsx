@@ -9,16 +9,14 @@ export default function BackgroundMarquee() {
     const tl = gsap.timeline({
       scrollTrigger: {
         trigger: ".marquee-text",
-        start: "-50% top",
-        end: "600% top",
+        start: "-150% top",
+        end: "400% top",
         scrub: true,
+        markers: true,
       },
     });
-    tl.from(".marquee-text", {
-      xPercent: -10,
-      stagger: 0.02,
-    }).to(".marquee-text", {
-      xPercent: -40,
+    tl.to(".marquee-text", {
+      translateX: -800,
       stagger: 0.02,
     });
   });
