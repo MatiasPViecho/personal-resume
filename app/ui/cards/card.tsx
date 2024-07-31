@@ -17,7 +17,7 @@ export default function Card({
         height={128}
         className={"md:w-32 md:h-32 w-16 h-16 mx-auto"}
       />
-      <p className="font-work_sans font-semibold pt-8 select-none text-sm text-center">
+      <p className="font-work_sans font-semibold pt-2 md:pt-8 select-none text-sm text-center">
         {name}
       </p>
     </div>

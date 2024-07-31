@@ -43,29 +43,32 @@ export default function ProjectsSection() {
       <h1 className="font-xanh_mono w-max text-4xl sm:text-7xl lg:text-9xl text-slate mx-auto tracking-wide">
         WHAT I&apos;VE DONE
       </h1>
-      <div className="flex flex-col gap-4">
-        <div className="md:grid md:grid-cols-2 overflow-visible">
-          <div className="z-40 bg-gradient-to-r pointer-events-none from-dorian cloud bg-opacity-90 sm:p-4 md:p-8 md:pl-32">
+      <div className="flex flex-col gap-12 md:gap-4">
+        <div className="flex flex-col gap-12 md:grid md:grid-cols-2 md:gap-0 overflow-visible">
+          <div className="z-40 bg-gradient-to-r pointer-events-none from-dorian cloud bg-opacity-90 sm:p-4 md:p-8 xl:pl-32">
             <h2 className="font-work_sans text-lg font-medium uppercase">
               Work experience
             </h2>
             <Table headers={work_table.headers} rows={work_table.rows} />
           </div>
           <div className="flex flex-col gap-1">
-            <h2 className="font-work_sans text-lg font-medium uppercase">
+            <h2 className="md:pr-28 md:text-center font-work_sans text-lg font-medium uppercase">
               Personal Projects
             </h2>
             <Carousel items={personal_projects} />
           </div>
         </div>
         <div className="md:flex md:justify-between">
-          <div className="z-40 bg-gradient-to-r pointer-events-none from-dorian cloud bg-opacity-90 sm:p-4 md:p-8 md:pl-32">
+          <div className="z-40 bg-gradient-to-r pointer-events-none from-dorian cloud bg-opacity-90 sm:p-4 md:p-8 xl:pl-32">
             <h2 className="font-work_sans text-lg font-medium uppercase">
               Studies
             </h2>
             <Table headers={studies_table.headers} rows={studies_table.rows} />
           </div>
-          <div className="flex-1">
+          <div className="flex-1 flex flex-col">
+            <h2 className="text-center font-work_sans text-lg font-medium uppercase">
+              Studies
+            </h2>
             <CardSection />
           </div>
         </div>
