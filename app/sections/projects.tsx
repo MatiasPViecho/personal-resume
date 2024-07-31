@@ -39,7 +39,7 @@ const personal_projects: ProjectI[] = [
 ];
 export default function ProjectsSection() {
   return (
-    <div className="mt-12 flex flex-col px-2 sm:px-0 gap-4 sm:gap-8 md:gap-16">
+    <div className="mt-12 flex flex-col px-2 sm:px-0 gap-4 sm:gap-8 md:gap-16 py-8 md:py-16">
       <h1 className="font-xanh_mono w-max text-4xl sm:text-7xl lg:text-9xl text-slate mx-auto tracking-wide">
         WHAT I&apos;VE DONE
       </h1>

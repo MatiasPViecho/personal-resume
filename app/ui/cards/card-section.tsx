@@ -4,8 +4,59 @@ import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import Draggable from "gsap/src/Draggable";
 import { useRef } from "react";
-import { IDirectionAngle } from "@/app/interfaces";
+import { IDirectionAngle, ITechCard } from "@/app/interfaces";
 const ANGLE_ROTATE_DIVIDER = 20;
+const techCards: ITechCard[] = [
+  {
+    imagePath: "/tech/next-js.svg",
+    name: "Next.JS",
+    posX: 0,
+    posY: 0,
+    angle: 0,
+  },
+  {
+    imagePath: "/tech/css.svg",
+    name: "CSS",
+    posX: 0,
+    posY: 0,
+    angle: 0,
+  },
+  {
+    imagePath: "/tech/gsap.svg",
+    name: "GSAP",
+    posX: 0,
+    posY: 0,
+    angle: 0,
+  },
+  {
+    imagePath: "/tech/postgresql.svg",
+    name: "SQL",
+    posX: 0,
+    posY: 0,
+    angle: 0,
+  },
+  {
+    imagePath: "/tech/typescript.svg",
+    name: "Typescript",
+    posX: 0,
+    posY: 0,
+    angle: 0,
+  },
+  {
+    imagePath: "/tech/scss.svg",
+    name: "SCSS",
+    posX: 0,
+    posY: 0,
+    angle: 0,
+  },
+  {
+    imagePath: "/tech/laravel.svg",
+    name: "Laravel",
+    posX: 0,
+    posY: 0,
+    angle: 0,
+  },
+];
 gsap.registerPlugin(useGSAP, Draggable);
 export default function CardSection() {
   const containerRef = useRef<HTMLDivElement>(null);
@@ -50,16 +101,20 @@ export default function CardSection() {
       ref={containerRef}
       className="rounded-2xl bg-gradient-radial to-dorian from-dorian"
     >
-      <ul ref={ulRef} className="drag-bounds">
-        <li id="first-object" className="draggable-element max-w-max max-h-max">
-          <Card name="Next.js" imgPath="/tech/next-js.svg" alt="Next.JS Icon" />
-        </li>
-        <li
-          id="second-object"
-          className="draggable-element max-w-max max-h-max"
-        >
-          <Card name="Next.js" imgPath="/tech/next-js.svg" alt="Next.JS Icon" />
-        </li>
+      <ul ref={ulRef} className="drag-bounds relative">
+        {techCards.map((card, i) => (
+          <li
+            key={`${card.name}-${i}`}
+            id={`${card.name}-${i}`}
+            className="draggable-element max-w-max max-h-max absolute"
+          >
+            <Card
+              name={card.name}
+              imgPath={card.imagePath}
+              alt={`${card.name} Icon`}
+            />
+          </li>
+        ))}
       </ul>
     </div>
   );
