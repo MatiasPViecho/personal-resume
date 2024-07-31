@@ -1,6 +1,7 @@
 import Table from "@/app/ui/table";
 import Carousel from "@/app/ui/carousel/carousel";
 import { ProjectI, TableI } from "@/app/interfaces";
+import CardSection from "../ui/cards/card-section";
 
 const work_table: TableI = {
   headers: ["Place", "Role", "Year"],
@@ -20,8 +21,20 @@ const personal_projects: ProjectI[] = [
   {
     href: "https://1000lumens.vercel.app/",
     alt: "Screenshot of 1000lumens project",
-    imagePath: "/mock-card.jpg",
+    imagePath: "/project-images/1000lumens-screenshot.png",
     name: "1000 Lumens",
+  },
+  {
+    href: "https://cash-splitter.vercel.app",
+    alt: "Screenshot of Cash Splitter project",
+    imagePath: "/project-images/cash-splitter-screenshot.png",
+    name: "Cash Splitter",
+  },
+  {
+    href: "https://pokedex-one-gamma-80.vercel.app/",
+    alt: "Screenshot of Pokedex project",
+    imagePath: "/project-images/pokedex-screenshot.png",
+    name: "Pokedex",
   },
 ];
 export default function ProjectsSection() {
@@ -32,7 +45,7 @@ export default function ProjectsSection() {
       </h1>
       <div className="flex flex-col gap-4">
         <div className="md:grid md:grid-cols-2 overflow-visible">
-          <div className="z-40 bg-gradient-to-r pointer-events-none from-cloud bg-opacity-90 sm:p-4 md:p-8">
+          <div className="z-40 bg-gradient-to-r pointer-events-none from-cloud bg-opacity-90 sm:p-4 md:p-8 md:pl-32">
             <h2 className="font-work_sans text-lg font-medium uppercase">
               Work experience
             </h2>
@@ -46,11 +59,14 @@ export default function ProjectsSection() {
           </div>
         </div>
         <div className="md:flex md:justify-between">
-          <div className="z-40 bg-gradient-to-r pointer-events-none from-cloud bg-opacity-90 sm:p-4 md:p-8">
+          <div className="z-40 bg-gradient-to-r pointer-events-none from-cloud bg-opacity-90 sm:p-4 md:p-8 md:pl-32">
             <h2 className="font-work_sans text-lg font-medium uppercase">
               Studies
             </h2>
             <Table headers={studies_table.headers} rows={studies_table.rows} />
+          </div>
+          <div className="flex-1">
+            <CardSection />
           </div>
         </div>
       </div>

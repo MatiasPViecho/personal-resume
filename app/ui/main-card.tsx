@@ -3,7 +3,6 @@ import Image from "next/image";
 import { useRef } from "react";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
-import Link from "next/link";
 gsap.registerPlugin(useGSAP);
 export default function MainCard() {
   const container = useRef<HTMLDivElement>(null);
@@ -58,17 +57,20 @@ export default function MainCard() {
     },
     { scope: container }
   );
+  const changeCard = () => {
+    console.log("WIP change card");
+  };
   return (
     <div
       ref={container}
       className="overflow-hidden flex flex-col w-[250px] h-[350px] md:h-[700px] md:w-[500px] gap-3 p-2 md:p-8  border-slate border-4 rounded-2xl bg-cloud/70 backdrop-blur-sm relative"
     >
-      <Link
-        href={"#test"}
+      <button
+        onClick={changeCard}
         className="absolute top-4 right-4 hover:rotate-12 transition-transform"
       >
         <Image src="/misc/info.svg" width={32} height={32} alt="information" />
-      </Link>
+      </button>
       <Image
         alt="portrait"
         src={"/IMG_3478-4.jpg"}
