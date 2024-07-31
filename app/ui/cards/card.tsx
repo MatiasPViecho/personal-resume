@@ -9,7 +9,7 @@ export default function Card({
   name: string;
 }) {
   return (
-    <div className="bg-cloud content-center border-onyx rounded-lg border w-[100px] h-[125px] md:w-[200px] md:h-[250px] py-4 px-3 text-sm md:text-lg">
+    <div className="bg-cloud content-center border-onyx rounded-lg border w-[100px] h-[125px] md:w-[200px] md:h-[250px] py-4 px-3 text-sm md:text-lg *:pointer-events-none">
       <Image
         src={imgPath}
         alt={alt}

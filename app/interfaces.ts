@@ -8,3 +8,7 @@ export interface ProjectI {
   alt: string;
   name: string;
 }
+export interface IDirectionAngle {
+  x: number;
+  angle: number;
+}
