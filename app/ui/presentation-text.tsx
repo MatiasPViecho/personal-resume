@@ -10,10 +10,11 @@ export default function PresentationText() {
     const tl = gsap.timeline({
       scrollTrigger: {
         trigger: ref.current,
-        start: "top bottom",
-        end: "bottom center",
+        start: "top 99%",
+        end: "280% bottom",
         scrub: false,
-        toggleActions: "play reverse reverse complete",
+        markers: true,
+        toggleActions: "play reverse play play",
       },
     });
     tl.from(ref.current, {
@@ -26,7 +27,7 @@ export default function PresentationText() {
   });
   return (
     <div
-      className="flex w-max max-w-72 flex-col mx-auto sm:mx-0 text-wrap sm:ml-auto sm:max-w-96 md:max-w-max gap-8 md:gap-2 px-2 font-medium font-work_sans text-sm"
+      className="flex w-max max-w-72 flex-col mx-auto sm:mx-0 text-wrap sm:ml-auto sm:max-w-96 md:max-w-max gap-8 md:gap-2 px-2 font-medium font-work_sans text-sm xl:pr-32"
       ref={ref}
     >
       <div>

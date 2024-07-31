@@ -12,7 +12,6 @@ export default function BackgroundMarquee() {
         start: "-150% top",
         end: "400% top",
         scrub: true,
-        markers: true,
       },
     });
     tl.to(".marquee-text", {
