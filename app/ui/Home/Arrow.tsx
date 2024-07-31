@@ -16,7 +16,7 @@ export default function Arrow() {
   });
   return (
     <Image
-      className="arrow-pointer hidden md:block md:absolute md:left-16 top-16 md:-rotate-12"
+      className="-z-20 arrow-pointer hidden md:block md:absolute md:left-16 top-16 md:-rotate-12"
       alt="arrow pointing down"
       src="/misc/arrow.svg"
       height={48}
