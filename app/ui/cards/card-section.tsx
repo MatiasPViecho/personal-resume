@@ -5,56 +5,36 @@ import { useGSAP } from "@gsap/react";
 import Draggable from "gsap/src/Draggable";
 import { useRef } from "react";
 import { IDirectionAngle, ITechCard } from "@/app/interfaces";
-const ANGLE_ROTATE_DIVIDER = 20;
+const ANGLE_ROTATE_DIVIDER = 80;
 const techCards: ITechCard[] = [
-  {
-    imagePath: "/tech/next-js.svg",
-    name: "Next.JS",
-    posX: 0,
-    posY: 0,
-    angle: 0,
-  },
-  {
-    imagePath: "/tech/css.svg",
-    name: "CSS",
-    posX: 0,
-    posY: 0,
-    angle: 0,
-  },
   {
     imagePath: "/tech/gsap.svg",
     name: "GSAP",
-    posX: 0,
-    posY: 0,
-    angle: 0,
   },
   {
     imagePath: "/tech/postgresql.svg",
     name: "SQL",
-    posX: 0,
-    posY: 0,
-    angle: 0,
+  },
+
+  {
+    imagePath: "/tech/laravel.svg",
+    name: "Laravel",
   },
   {
-    imagePath: "/tech/typescript.svg",
-    name: "Typescript",
-    posX: 0,
-    posY: 0,
-    angle: 0,
+    imagePath: "/tech/next-js.svg",
+    name: "Next.JS",
   },
   {
     imagePath: "/tech/scss.svg",
     name: "SCSS",
-    posX: 0,
-    posY: 0,
-    angle: 0,
   },
   {
-    imagePath: "/tech/laravel.svg",
-    name: "Laravel",
-    posX: 0,
-    posY: 0,
-    angle: 0,
+    imagePath: "/tech/css.svg",
+    name: "CSS",
+  },
+  {
+    imagePath: "/tech/typescript.svg",
+    name: "Typescript",
   },
 ];
 gsap.registerPlugin(useGSAP, Draggable);
@@ -106,7 +86,9 @@ export default function CardSection() {
           <li
             key={`${card.name}-${i}`}
             id={`${card.name}-${i}`}
-            className="draggable-element max-w-max max-h-max absolute"
+            className={`draggable-element max-w-max max-h-max absolute left-${
+              i === 0 ? i + 1 : i * 4
+            }`}
           >
             <Card
               name={card.name}

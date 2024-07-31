@@ -12,3 +12,7 @@ export interface IDirectionAngle {
   x: number;
   angle: number;
 }
+export interface ITechCard {
+  imagePath: string;
+  name: string;
+}

@@ -65,9 +65,9 @@ export default function ProjectsSection() {
             </h2>
             <Table headers={studies_table.headers} rows={studies_table.rows} />
           </div>
-          <div className="flex-1 flex flex-col">
+          <div className="flex-1 flex flex-col min-h-96">
             <h2 className="text-center font-work_sans text-lg font-medium uppercase">
-              Studies
+              TECHNOLOGIES I USE
             </h2>
             <CardSection />
           </div>
