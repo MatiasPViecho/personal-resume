@@ -16,7 +16,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={` antialiased bg-cloud min-h-dvh ${xanhMono.variable} ${workSans.variable}`}
+        className={` antialiased bg-dorian min-h-dvh ${xanhMono.variable} ${workSans.variable}`}
       >
         {children}
       </body>

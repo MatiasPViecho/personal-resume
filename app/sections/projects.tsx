@@ -45,7 +45,7 @@ export default function ProjectsSection() {
       </h1>
       <div className="flex flex-col gap-4">
         <div className="md:grid md:grid-cols-2 overflow-visible">
-          <div className="z-40 bg-gradient-to-r pointer-events-none from-cloud bg-opacity-90 sm:p-4 md:p-8 md:pl-32">
+          <div className="z-40 bg-gradient-to-r pointer-events-none from-dorian cloud bg-opacity-90 sm:p-4 md:p-8 md:pl-32">
             <h2 className="font-work_sans text-lg font-medium uppercase">
               Work experience
             </h2>
@@ -59,7 +59,7 @@ export default function ProjectsSection() {
           </div>
         </div>
         <div className="md:flex md:justify-between">
-          <div className="z-40 bg-gradient-to-r pointer-events-none from-cloud bg-opacity-90 sm:p-4 md:p-8 md:pl-32">
+          <div className="z-40 bg-gradient-to-r pointer-events-none from-dorian cloud bg-opacity-90 sm:p-4 md:p-8 md:pl-32">
             <h2 className="font-work_sans text-lg font-medium uppercase">
               Studies
             </h2>
