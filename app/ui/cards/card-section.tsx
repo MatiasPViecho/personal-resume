@@ -48,12 +48,6 @@ export default function CardSection() {
   useGSAP(
     () => {
       Draggable.create(".draggable-element", {
-        bounds: {
-          top: -50,
-          left: 0,
-        },
-        edgeResistance: 1,
-        dragResistance: 0.08,
         onRelease: (args: PointerEvent) => {
           const currentElement = args.target as HTMLDivElement;
           const id = currentElement.offsetParent?.id;

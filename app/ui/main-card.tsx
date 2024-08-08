@@ -65,15 +65,9 @@ export default function MainCard() {
       ref={container}
       className="overflow-hidden flex flex-col w-[250px] h-[350px] md:h-[700px] md:w-[500px] gap-3 p-2 md:p-8  border-slate border-4 rounded-2xl bg-cloud/70 backdrop-blur-sm relative"
     >
-      <button
-        onClick={changeCard}
-        className="absolute top-4 right-4 hover:rotate-12 transition-transform"
-      >
-        <Image src="/misc/info.svg" width={32} height={32} alt="information" />
-      </button>
       <Image
         alt="portrait"
-        src={"/IMG_3478-4.jpg"}
+        src={"/IMG_7390.webp"}
         className="border-2 border-onyx shadow-lg w-[150px] h-[150px] md:w-[400px] md:h-[400px] rounded-full mx-auto"
         width={1000}
         height={1500}

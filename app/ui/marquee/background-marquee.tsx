@@ -3,8 +3,13 @@ import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/src/ScrollTrigger";
 import MarqueeText from "./marquee-text";
+import { Fragment } from "react";
 gsap.registerPlugin(ScrollTrigger, useGSAP);
-export default function BackgroundMarquee() {
+export default function BackgroundMarquee({
+  marquees = [],
+}: {
+  marquees: string[];
+}) {
   useGSAP(() => {
     const tl = gsap.timeline({
       scrollTrigger: {
@@ -24,10 +29,11 @@ export default function BackgroundMarquee() {
       aria-hidden="true"
       className="absolute pointer-events-none top-8 md:top-20 flex flex-col gap-16 md:gap-2"
     >
-      <MarqueeText text={"MATIAS F. PEREZ VIECHO"} />
-      <MarqueeText text={"FULLSTACK WEB DEVELOPER"} />
-      <MarqueeText text={"MATIAS F. PEREZ VIECHO"} />
-      <MarqueeText text={"FULLSTACK WEB DEVELOPER"} />
+      {marquees.map((marquee, i) => (
+        <Fragment key={i}>
+          <MarqueeText text={marquee} />
+        </Fragment>
+      ))}
     </div>
   );
 }

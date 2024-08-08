@@ -5,7 +5,14 @@ import Arrow from "@/app/ui/Home/Arrow";
 export default function HomeSection() {
   return (
     <>
-      <BackgroundMarquee />
+      <BackgroundMarquee
+        marquees={[
+          "MATIAS F. PEREZ VIECHO",
+          "WEB DEVELOPER",
+          "MATIAS F. PEREZ VIECHO",
+          "WEB DEVELOPER",
+        ]}
+      />
       <div className="w-max mx-auto py-32 md:pt-32 md:pb-2">
         <MainCard />
       </div>

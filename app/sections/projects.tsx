@@ -65,7 +65,7 @@ export default function ProjectsSection() {
             </h2>
             <Table headers={studies_table.headers} rows={studies_table.rows} />
           </div>
-          <div className="flex-1 flex flex-col min-h-96">
+          <div className="flex-1 flex flex-col pb-40 pt-8">
             <h2 className="text-center font-work_sans text-lg font-medium uppercase">
               TECHNOLOGIES I USE
             </h2>
