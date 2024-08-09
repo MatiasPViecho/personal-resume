@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { xanhMono, workSans } from "./ui/fonts";
-
+import { Analytics } from "@vercel/analytics/react";
 export const metadata: Metadata = {
   title: "Matias Viecho - Resume",
   description: "Online Resume developed with NextJS",
@@ -35,6 +35,7 @@ export default function RootLayout({
         className={` antialiased bg-dorian min-h-dvh ${xanhMono.variable} ${workSans.variable}`}
       >
         {children}
+        <Analytics />
       </body>
     </html>
   );
