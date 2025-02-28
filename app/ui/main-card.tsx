@@ -127,7 +127,7 @@ export default function MainCard() {
           />
         </a>
         <a
-          href="/resume.pdf"
+          href="/cv.pdf"
           rel="noreferrer noopener nofollow"
           download
           className="relative before:opacity-0 hover:before:opacity-100 hover:before:translate-y-0 md:hover:before:translate-y-4 before:translate-y-8 before:transition-transform before:content-[attr(data-before)] before:p-1 before:z-20 before:select-none before:absolute before:bottom-8 before:pointer-events-none before:font-work_sans before:-right-8 before:text-sm before:bg-cloud before:border before:border-onyx before:rounded-lg before:w-max"
