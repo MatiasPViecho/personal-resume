@@ -26,7 +26,7 @@ export default function ContactSection() {
         </li>
         <li>
           <a
-            href="/Resume.pdf"
+            href="/cv.pdf"
             rel="noreferrer noopener nofollow"
             download
             className="text-base lg:text-3xl lg:font-medium uppercase underline-offset-2 font-work_sans font-bold underline"
