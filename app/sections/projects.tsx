@@ -6,8 +6,8 @@ import CardSection from "../ui/cards/card-section";
 const work_table: TableI = {
   headers: ["Place", "Role", "Year"],
   rows: [
-    ["Tuxdi", "Full-stack developer", "Jan 2023 - Mar 2024"],
-    ["Begit", "Product Manager", "Mar 2021 - Mar 2022"],
+    ["Tuxdi", "Full-stack developer", "December 2022 - Mar 2024"],
+    ["Begit", "Project Manager", "Mar 2020 - June 2021"],
   ],
 };
 const studies_table: TableI = {
