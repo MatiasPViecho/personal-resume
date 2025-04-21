@@ -19,6 +19,12 @@ const studies_table: TableI = {
 };
 const personal_projects: ProjectI[] = [
   {
+    href: "https://island-3d-fawn.vercel.app/",
+    alt: "Screenshot of island-3d project",
+    imagePath: "/project-images/island-3d-screenshot.png",
+    name: "Stranded Island (WIP - ThreeJS)",
+  },
+  {
     href: "https://1000lumens.vercel.app/",
     alt: "Screenshot of 1000lumens project",
     imagePath: "/project-images/1000lumens-screenshot.png",
