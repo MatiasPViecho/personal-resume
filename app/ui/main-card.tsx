@@ -57,9 +57,6 @@ export default function MainCard() {
     },
     { scope: container }
   );
-  const changeCard = () => {
-    console.log("WIP change card");
-  };
   return (
     <div
       ref={container}
@@ -76,12 +73,12 @@ export default function MainCard() {
         <span className="font-xanh_mono text-iris text-[40px] tracking-tight text-animated">
           I&apos;m Matias
         </span>
-        <div className="flex flex-col gap-0 font-semibold font-work_sans text-sm text-animated md:text-base">
-          <span>Fullstack web developer</span>
-          <span> +1 year of experience + studies</span>
+        <div className="flex flex-col gap-0 font-semibold font-work_sans text-xs md:text-sm text-animated md:text-base">
+          <span>24 yo. developer from Argentina</span>
+          <span>I&apos;m currently studying Systems Engineering at UNICEN. (Argentina)</span>
         </div>
       </div>
-      <div className="flex gap-2 max-h-10 md:pt-8">
+      <div className="flex gap-2 max-h-10 md:pt-4">
         <a
           href="https://www.linkedin.com/in/matias-francisco-perez-viecho/"
           rel="noreferrer noopener nofollow"
