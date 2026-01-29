@@ -26,8 +26,8 @@
       "title": "Experiencias",
       "table": {
         "titles": {
-          "first": "Tipo",
-          "second": "Nombre",
+          "first": "Nombre",
+          "second": "Tipo",
           "third": "Año"
         },
         "content": {
