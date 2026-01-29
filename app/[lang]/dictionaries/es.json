@@ -1,0 +1,65 @@
+{
+  "home": {
+    "main": {
+      "mainCard": {
+        "title": "Soy Matias",
+        "subtitle_1": "Dev de 24 años de Argentina",
+        "subtitle_2": "Actualmente estudiando Ingeniería en Sistemas en la UNICEN (Argentina)",
+        "icon_linkedin": "Mira mi Linkedin!",
+        "icon_github": "Mira mi GitHub!",
+        "icon_email": "Envíame un Email",
+        "icon_cv": "Descarga mi CV"
+      },
+      "presentationText": {
+        "subtitle_1": "Me encanta saber cómo funcionan las cosas internamente y trabajar con sistemas complejos",
+        "subtitle_2": "Este portfolio es de 2024, aprendí muchas habilidades nuevas desde que lo hice, ya establecí como meta cambiarlo",
+        "subtitle_3": "Inclusive terminé un curso de ThreeJS de Bruno Simon (muy bueno!), que esta página no usa"
+      }
+    }
+  },
+  "projects": {
+    "title_1": "QUE HICE",
+    "subtitle_1": "Quitando las experencias formales, paso la mayor parte de mi tiempo tanto aprendiendo como funcionan algunos sistemas retro, programando proyectos que me llamen la atención, o trabajando como cámara en eventos deportivos!",
+    "title_2": "TECNOLOGÍAS QUE USO",
+    "subtitle_2": "Proyectos Personales",
+    "experiences": {
+      "title": "Experiencias",
+      "table": {
+        "titles": {
+          "first": "Tipo",
+          "second": "Nombre",
+          "third": "Año"
+        },
+        "content": {
+          "first": {
+            "type": "Facultad",
+            "name": "TUDAI (UNICEN)",
+            "year": "2021 - 2023"
+          },
+          "second": {
+            "type": "Trabajo",
+            "name": "Tuxdi | Full-stack developer",
+            "year": "Diciembre 2022 - Marzo 2024"
+          },
+          "third": {
+            "type": "Facultad",
+            "name": "Ingeniería de Sistemas (UNICEN)",
+            "year": "2024 - Actualidad"
+          },
+          "fourth": {
+            "type": "Curso",
+            "name": "ThreeJS Journey - Bruno Simon",
+            "year": "2025-2026"
+          }
+        }
+      }
+    }
+  },
+  "contact": {
+    "title": "Pongámonos en contacto",
+    "option_email": "Envíame un email",
+    "option_github": "Revisa mi Github",
+    "option_cv": "Descarga mi Resumen",
+    "option_linkedin": "Contáctame por LinkedIn"
+  }
+}

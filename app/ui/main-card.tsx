@@ -3,8 +3,9 @@ import Image from "next/image";
 import { useRef } from "react";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
+import type { IHMainCard } from "../interfaces";
 gsap.registerPlugin(useGSAP);
-export default function MainCard() {
+export default function MainCard({ dict }: { dict: IHMainCard }) {
   const container = useRef<HTMLDivElement>(null);
   useGSAP(
     () => {
@@ -27,7 +28,7 @@ export default function MainCard() {
             translateY: +100,
             opacity: 0,
           },
-          "-=1.2"
+          "-=1.2",
         )
         .to(
           ".text-animated",
@@ -36,7 +37,7 @@ export default function MainCard() {
             opacity: 1,
             stagger: 0.1,
           },
-          "-=1.2"
+          "-=1.2",
         )
         .from(
           ".link-icon",
@@ -44,7 +45,7 @@ export default function MainCard() {
             stagger: 0.05,
             translateY: +100,
           },
-          "-=1.2"
+          "-=1.2",
         )
         .to(
           ".link-icon",
@@ -52,10 +53,10 @@ export default function MainCard() {
             translateY: 0,
             stagger: 0.1,
           },
-          "-=1.2"
+          "-=1.2",
         );
     },
-    { scope: container }
+    { scope: container },
   );
   return (
     <div
@@ -71,11 +72,11 @@ export default function MainCard() {
       />
       <div className="gap-2 flex flex-col w-full">
         <span className="font-xanh_mono text-iris text-[40px] tracking-tight text-animated">
-          I&apos;m Matias
+          {dict.title}
         </span>
         <div className="flex flex-col gap-0 font-semibold font-work_sans text-xs md:text-sm text-animated md:text-base">
-          <span>24 yo. developer from Argentina</span>
-          <span>I&apos;m currently studying Systems Engineering at UNICEN. (Argentina)</span>
+          <span>{dict.subtitle_1}</span>
+          <span>{dict.subtitle_2}</span>
         </div>
       </div>
       <div className="flex gap-2 max-h-10 md:pt-4">
@@ -84,7 +85,7 @@ export default function MainCard() {
           rel="noreferrer noopener nofollow"
           target="_blank"
           className="relative before:opacity-0 hover:before:opacity-100 hover:before:translate-y-0 md:hover:before:translate-y-4 before:translate-y-8 before:transition-transform before:content-[attr(data-before)] before:p-1 before:z-20 before:select-none before:absolute before:bottom-8 before:pointer-events-none before:font-work_sans before:-right-28 before:text-sm before:bg-cloud before:border before:border-onyx before:rounded-lg before:w-max"
-          data-before="Check my LinkedIn!"
+          data-before={dict.icon_linkedin}
         >
           <Image
             className="link-icon h-10 w-10 md:h-16 md:w-16"
@@ -99,7 +100,7 @@ export default function MainCard() {
           rel="noreferrer noopener nofollow"
           target="_blank"
           className="relative before:opacity-0 hover:before:opacity-100 hover:before:translate-y-0 md:hover:before:translate-y-4 before:translate-y-8 before:transition-transform before:content-[attr(data-before)] before:p-1 before:z-20 before:select-none before:absolute before:bottom-8 before:pointer-events-none before:font-work_sans before:-right-24 before:text-sm before:bg-cloud before:border before:border-onyx before:rounded-lg before:w-max"
-          data-before="Check my github!"
+          data-before={dict.icon_github}
         >
           <Image
             className="link-icon h-10 w-10 md:h-16 md:w-16"
@@ -113,7 +114,7 @@ export default function MainCard() {
           href="mailto:matiasviecho.work@gmail.com"
           rel="noreferrer noopener nofollow"
           className="relative before:opacity-0 hover:before:opacity-100 hover:before:translate-y-0 md:hover:before:translate-y-4 before:translate-y-8 before:transition-transform before:content-[attr(data-before)] before:p-1 before:z-20 before:select-none before:absolute before:bottom-8 before:pointer-events-none before:font-work_sans before:-right-16 before:text-sm before:bg-cloud before:border before:border-onyx before:rounded-lg before:w-max"
-          data-before="Send me an email!"
+          data-before={dict.icon_email}
         >
           <Image
             className="link-icon h-10 w-12 md:h-16 md:w-20"
@@ -128,7 +129,7 @@ export default function MainCard() {
           rel="noreferrer noopener nofollow"
           download
           className="relative before:opacity-0 hover:before:opacity-100 hover:before:translate-y-0 md:hover:before:translate-y-4 before:translate-y-8 before:transition-transform before:content-[attr(data-before)] before:p-1 before:z-20 before:select-none before:absolute before:bottom-8 before:pointer-events-none before:font-work_sans before:-right-8 before:text-sm before:bg-cloud before:border before:border-onyx before:rounded-lg before:w-max"
-          data-before="Download my CV!"
+          data-before={dict.icon_cv}
         >
           <Image
             className="link-icon h-10 w-8 md:h-16 md:w-12"

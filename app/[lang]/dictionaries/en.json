@@ -1,0 +1,65 @@
+{
+  "home": {
+    "main": {
+      "mainCard": {
+        "title": "I'm Matias",
+        "subtitle_1": "24 yo. developer from Argentina",
+        "subtitle_2": "I'm currently studying Systems Engineering at UNICEN (Argentina)",
+        "icon_linkedin": "Check my LinkedIn!",
+        "icon_github": "Check my github!",
+        "icon_email": "Send me an email!",
+        "icon_cv": "Download my CV!"
+      },
+      "presentationText": {
+        "subtitle_1": "I love knowing how stuff works in detail and working on complex systems",
+        "subtitle_2": "This portfolio is from 2024, since then I learned a lot of new abilities, so I set a goal to improve / change this portfolio",
+        "subtitle_3": "Even finished a ThreeJS course by Bruno Simon, which this portfolio doesn't use"
+      }
+    }
+  },
+  "projects": {
+    "title_1": "WHAT I'VE DONE",
+    "subtitle_1": "Apart from formal experiences I spent most of my time whether learning about how old retro systems work, programming my own little projects, or working as a cameraman for sport events!",
+    "title_2": "TECHNOLOGIES I USE",
+    "subtitle_2": "Personal Projects",
+    "experiences": {
+      "title": "Experiences",
+      "table": {
+        "titles": {
+          "first": "Type",
+          "second": "Name",
+          "third": "Year"
+        },
+        "content": {
+          "first": {
+            "type": "College",
+            "name": "TUDAI (UNICEN)",
+            "year": "2021 - 2023"
+          },
+          "second": {
+            "type": "Work",
+            "name": "Tuxdi | Full-stack developer",
+            "year": "December 2022 - Mar 2024"
+          },
+          "third": {
+            "type": "College",
+            "name": "Systems Engineering (UNICEN)",
+            "year": "2024 - Current"
+          },
+          "fourth": {
+            "type": "Course",
+            "name": "ThreeJS Journey - Bruno Simon",
+            "year": "2025-2026"
+          }
+        }
+      }
+    }
+  },
+  "contact": {
+    "title": "Let's get in touch",
+    "option_email": "Send me an email",
+    "option_github": "Checkout my Github",
+    "option_cv": "Download my Resume",
+    "option_linkedin": "Contact me via LinkedIn"
+  }
+}

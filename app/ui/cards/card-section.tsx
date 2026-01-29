@@ -68,7 +68,7 @@ export default function CardSection() {
         },
       });
     },
-    { scope: containerRef }
+    { scope: containerRef },
   );
   return (
     <div

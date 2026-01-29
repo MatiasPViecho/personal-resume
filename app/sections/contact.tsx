@@ -1,8 +1,10 @@
-export default function ContactSection() {
+import { IContact } from "../interfaces";
+
+export default function ContactSection({ dict }: { dict: IContact }) {
   return (
     <div className="px-2 sm:px-8 lg:pt-4 xl:pl-32 mb-16">
       <h3 className="text-iris text-6xl font-light font-xanh_mono uppercase">
-        Let&apos;s get in touch
+        {dict.title}
       </h3>
       <ul className="flex flex-col gap-3 pt-4 lg:pt-16 lg:gap-4">
         <li>
@@ -11,7 +13,7 @@ export default function ContactSection() {
             rel="noreferrer noopener nofollow"
             className="text-base lg:text-3xl lg:font-medium uppercase underline-offset-2 font-work_sans font-bold underline"
           >
-            Send me an email
+            {dict.option_email}
           </a>
         </li>
         <li>
@@ -21,7 +23,7 @@ export default function ContactSection() {
             target="_blank"
             className="text-base lg:text-3xl lg:font-medium uppercase underline-offset-2 font-work_sans font-bold underline"
           >
-            Checkout my Github
+            {dict.option_github}
           </a>
         </li>
         <li>
@@ -31,7 +33,7 @@ export default function ContactSection() {
             download
             className="text-base lg:text-3xl lg:font-medium uppercase underline-offset-2 font-work_sans font-bold underline"
           >
-            Download my Resume
+            {dict.option_cv}
           </a>
         </li>
         <li>
@@ -41,7 +43,7 @@ export default function ContactSection() {
             rel="noreferrer noopener nofollow"
             className="text-base lg:text-3xl lg:font-medium uppercase underline-offset-2 font-work_sans font-bold underline"
           >
-            Contact me via LinkedIn
+            {dict.option_linkedin}
           </a>
         </li>
       </ul>
